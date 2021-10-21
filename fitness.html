@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Calculator</title>
+    <link rel="stylesheet" href="/css/fitness.css">
+</head>
+<script src="/js/fitness.js"></script>
+
+<body>
+<header>
+
+    <nav>
+        <ul>
+         <img src="/images/logo.png" alt="Error" id="logo"> 
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="fitness.html">Fitness Calculator</a></li> 
+                    
+         </ul>
+      
+    </nav>
+
+
+
+
+</header>
+
+
+
+
+    <h1>Fitness Calculator</h1>
+    <div class="Metriccalculator">
+
+        
+        <br>
+        <br>
+        <br>
+        <!--The Buttons for either METRIC or USA Calculations-->
+        <div class="horizontal">
+        <button id="metricUnits" class="buttons" onclick="metricDisplay()">
+            <p class="text">Metric Units</p>
+
+        </button>
+        <button id="usUnits" class="buttons" onclick="usDisplay()">
+            <p class="text">US Units</p>
+        </div>
+        </button>
+        <!--Inputs Area-->
+        <br>
+        <input type="text" name="age" id="age" placeholder="Enter your Age" class="calEntries">
+        <br>
+        <div class="radio">
+            <input type="radio" name="radio" id="r1" value="male">
+            <p class="text">Male</p>
+            <input type="radio" name="radio" id="r2" value="female">
+            <p class="text">Female</p>
+        </div>
+        <input type="text" placeholder="Enter your Height(cm)" id="height" class="calEntries">
+        <input type="text" placeholder="Enter your Weight(kg)" id="weight" class="calEntries">
+       
+
+        <br>
+        <button id="calculate" onclick="calculateBMI()">
+            <p class="text">Calculate</p>
+
+        </button>
+        <br>
+        <div id="result" class="text">
+                        Enter your Data
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="container">
+            <div id="box1">Under Weight</div>
+            <div id="box2">Normal</div>
+            <div id="box3">Over Weight</div>
+            <div id="box4">Obsesity</div>
+        </div>
+
+    </div>
+    <br>
+    <br>
+    <footer>
+        Copyrights &copy; 2021 Zain Fitness Club
+  </footer>
+</body>
+
+</html>
