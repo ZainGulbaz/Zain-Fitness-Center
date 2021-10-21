@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Our Fitness Center provides state of the art services to our customers.We belive in quality and serving the best possible to our customers"> 
+    <meta name="keywords" content="Fintess,Gym,Body">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/utili.css">
+    <title>Document</title>
+</head>
+<script src="js/logic.js"></script>
+<body>
+    <header>
+   <nav>
+       <ul>
+        <img src="/images/logo.png" alt="Error" id="logo"> 
+           <li><a href="index.html">Home</a></li>
+           <li><a href="about.html">About Us</a></li>
+           <li><a href="fitness.html">Fitness Calculator</a></li> 
+                   
+        </ul>
+     
+   </nav>
+   <div class="ticker">
+       <pre class="text3">|"Motivation comes from with in"|            |"It is never too late"|          |"You shall gain but you will have to pay with sweat and blood"|            |"If something is present between you and your success, move it"|</pre>
+   </div>
+   
+  
+    </header>
+    <main>
+     
+        <div class="gymForm">
+
+    <form action="form.php">
+
+     <input type="text" placeholder="Enter Name" id="formName" class="formEntity">
+     <br>
+     <br>
+     <input type="text" placeholder="Enter your Email"id="formEmail" class="formEntity">
+     <br>
+     <br>
+     <input type="date" name="Enter the Date" class="formEntity" > 
+      <div class="text" class="dob" id="marginText">
+       Enter your Date of Birth
+      </div>
+     <br>
+     <div class="radioButtons">
+     <input type="radio" id="formType" name="Elite" value="formType"> 
+     <input type="radio" id="formType" name="Elite" value="formType"> 
+     <input type="radio" id="formType" name="Elite" value="formType">
+     <p class="text">Elite</p>
+     <p class="text">Premium</p>
+     <p class="text">Regular</p>
+    </div>
+    <br>
+    <br>
+    <input type="text" placeholder="Enter your Phone Number" class="formEntity">
+    <br>
+    <br>
+    <div class="terms">
+    <input type="checkbox" id="formTerms">
+    <a href="agree.html"> <p class="text2">Agree with the Terms and Conditions</p></a>
+    </div>
+    <br>
+    
+    
+
+
+
+    </form>
+       
+    <button class="formBtn" onclick="register()" >Register</button> 
+    <br>
+    <div id="message">
+       <p class="Text" id="messageText">You have been registered succesfully</p>
+    </div>
+       </div>
+     
+   
+        <video src="/images/intro.mp4" autoplay loop width="600px" class="intro"></video>
+  
+    
+    </main>
+    
+    <footer>
+          Copyrights &copy; 2021 Zain Fitness Club
+    </footer>
+</body>
+</html>
